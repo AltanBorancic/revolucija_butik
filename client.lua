@@ -102,6 +102,26 @@ Citizen.CreateThread(function()
 		end
 	end
 end)
+CreateThread(function()
+for k, v in pairs(Config.Pedovi) do
+exports['qtarget']:AddTargetModel(v[6], {
+      	options = {
+      	{
+              	event = "openClothes_shop_target",
+              	icon = "fab fa-creative-commons-by",
+              	label = "Otvori butik",
+      	},
+      	{
+        	event = "butik:opcije",
+        	icon = "fab fa-creative-commons-by",
+        	label = "Kontrolisi Outfite",
+	},
+    	},
+      distance = 1.5
+})		
+end
+end)
+
 
 Citizen.CreateThread(function()
 	while true do
