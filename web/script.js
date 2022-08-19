@@ -1,6 +1,6 @@
 trenutno_input = null
 
-const resourceName = 'butik'
+const resourceName = 'revolucija_butik'
 
 window.addEventListener('message', function(event) {
   let data = event.data
