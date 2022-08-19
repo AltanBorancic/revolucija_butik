@@ -196,8 +196,8 @@ DaLiJeKomandaSkin = false
 
 CreateThread(function()
     for _,v in pairs(Config.Pedovi) do
-      RequestModel(GetHashKey(v[7]))
-      while not HasModelLoaded(GetHashKey(v[7])) do
+      RequestModel(GetHashKey(v[6]))
+      while not HasModelLoaded(GetHashKey(v[6])) do
         Wait(1)
       end
       RequestAnimDict("mini@strip_club@idles@bouncer@base")
